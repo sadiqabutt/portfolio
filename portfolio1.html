@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="portfolio.css">
+  <title>Sadiqa | Portfolio</title>
+  
+</head>
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a id="themeToggle" href="javascript:void(0)">🌙</a>
+    </nav>
+  </header>
+
+  
+  <section id="home">
+    <h2>Hi, I'm Sadiqa</h2>
+    <p>A passionate web developer creating modern, responsive, and user-friendly websites with creativity and performance in mind.</p>
+    <a href="#projects" class="btn">Explore My Work</a>
+
+  </section>
+
+   
+  <div id="about" class="section">
+  
+    <div class="about-container">
+      
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p><strong>Hi, I'm Sadiqa</strong> — A Full Stack developer focused on crafting seamless and elegant web experiences.</p>
+        <p>I have over 2 years of experience turning ideas into clean, responsive websites that prioritize usability, performance, and accessibility.</p>
+        <h3> Tools & Technologies</h3>
+        <div class="skills">
+          <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Bootstrap</span><span>Tailwind CSS</span>
+          <span>React (Basics)</span><span>Git & GitHub</span><span>Figma</span><span>Responsive Design</span><span>SEO Basics</span>
+        </div>
+        <h3>💼 Experience</h3>
+        <ul>
+          <li> Freelance Projects – 2023–Present</li>
+          <li> Frontend Mentor Challenges – 25+ UI projects</li>
+          <li> Blogging – Sharing web dev tips for HTML/CSS learners</li>
+        </ul>
+        <p>
+          <br>
+          With over <strong>2 years of hands-on experience</strong>, I specialize in transforming creative ideas into high-performance, visually appealing digital experiences.
+        </p>
+        <p>
+          Whether it’s building a landing page, portfolio site, or a dynamic user interface — I aim to deliver solutions that are not only functional but also engaging and accessible on all devices.
+        </p>
+        <p>
+          My mission is simple: <em>build beautiful, fast, and accessible web experiences that make an impact</em>.
+        </p>
+      </div>
+      <div class="about-image">
+        <img src="https://blogs.perficient.com/files/iStock-654100004-3-600x400.jpg" alt="Working Image">
+      </div>
+    </div>
+  </div>
+
+   <div id="services" class="section"> <h2>Services</h2>
+     <div class="project-list"> 
+      <div class="project-card"> 
+        <h3>Custom Web Design</h3> 
+        <p>I create unique, user-centric websites from scratch using HTML5 & CSS3, tailored for businesses or personal brands.</p> 
+      </div> 
+      <div class="project-card">
+         <h3>Responsive Development</h3>
+          <p>Ensuring your website looks perfect on all screen sizes—desktops, tablets, and mobiles—with fluid layouts & media queries.</p>
+         </div> <div class="project-card">
+           <h3>UI/UX Design</h3>
+            <p>I focus on designing clean, minimalistic, and intuitive interfaces to boost user engagement and experience.</p> </div> 
+            <div class="project-card"> <h3>SEO Optimization</h3>
+               <p>Optimizing your website's structure, metadata, and performance to improve visibility on search engines like Google.</p> 
+              </div> <div class="project-card"> <h3>Website Maintenance</h3> <p>Ongoing support for bug fixing, content updates, performance improvements, and design adjustments after launch.</p> </div>
+               <div class="project-card"> <h3>Landing Pages</h3> <p>High-converting landing pages designed for product launches, campaigns, or email marketing funnels.</p> 
+              </div>
+             </div> 
+            </div>
+  
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="https://img.freepik.com/free-photo/woman-using-computer_53876-47103.jpg?semt=ais_hybrid&w=740&q=80" alt="project">
+        <div class="project-info">
+          <h3>Portfolio Website</h3>
+          <p>Responsive portfolio built using HTML, CSS Grid, and animations.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7" alt="project">
+        <div class="project-info">
+          <h3>Business Landing Page</h3>
+          <p>Modern landing page design with smooth animations and CTA sections.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1504691342899-4d92b50853e1" alt="project">
+        <div class="project-info">
+          <h3>Product Showcase</h3>
+          <p>Dynamic showcase section using grid layout and transition effects.</p>
+        </div>
+      </div>
+       <div class="project-card">
+        <img src="https://www.sketchappsources.com/resources/source-image/e-commerce-ui-kit-tsibulski.jpg" alt="project">
+        <div class="project-info">
+          <h3>E-commerece UI</h3>
+          <p>Dynamic showcase section using grid layout and transition effects.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="contact" class="reveal">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  
+  <footer>
+    <p>© 2025 Sadiqa. All rights reserved.</p>
+  </footer>
+
+  <button id="scrollTop">↑</button>
+
+  <script>
+    // Dark/Light Toggle
+    const themeToggle = document.getElementById("themeToggle");
+    themeToggle.addEventListener("click", () => {
+      const currentTheme = document.body.getAttribute("data-theme");
+      if (currentTheme === "light") {
+        document.body.removeAttribute("data-theme");
+        themeToggle.textContent = "🌙";
+      } else {
+        document.body.setAttribute("data-theme", "light");
+        themeToggle.textContent = "☀️";
+      }
+    });
+
+    // Scroll animation
+    const reveals = document.querySelectorAll(".reveal");
+    window.addEventListener("scroll", () => {
+      reveals.forEach((r) => {
+        const top = r.getBoundingClientRect().top;
+        if (top < window.innerHeight - 100) r.classList.add("active");
+      });
+    });
+
+    // Scroll to top
+    const scrollTop = document.getElementById("scrollTop");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 200) scrollTop.style.display = "block";
+      else scrollTop.style.display = "none";
+    });
+    scrollTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+</body>
+</html>
